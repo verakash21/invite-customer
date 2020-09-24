@@ -47,9 +47,13 @@ public class CustomerList {
 		processCustomerList(inputFilePath, outputFilePath);
 		
 		logger.info("Execution Finished.");
-
 	}
 	
+	/**
+	 * Reads input customer list and outputs lists of customers within 100KM range of companies corordinates.
+	 * @param inputFile
+	 * @param outputFile
+	 */
 	public static void processCustomerList(String inputFile, String outputFile) {
 		BufferedReader reader;
 		SortedMap<Integer, String> outputMap = new TreeMap<Integer, String>();

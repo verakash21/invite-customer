@@ -5,6 +5,12 @@ import com.intercom.invite.customer.utils.Constants;
 public final class CalculateDistance {
 	private CalculateDistance() {};
 
+	/**
+	 * Calculates distance in KM between given longitude and latitude against the company location stored on constant.
+	 * @param cust_lat
+	 * @param cust_lon
+	 * @return
+	 */
 	public static double greatCircleDistance(double cust_lat, double cust_lon) {
 		// convert degrees to radians. 
 		double lon1 = Math.toRadians(cust_lon);

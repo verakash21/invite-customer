@@ -11,7 +11,11 @@ public final class JsonReader {
 
 	private JsonReader() {}
 	private static Logger logger = Logger.getLogger(JsonReader.class.getName());
-	
+	/**
+	 * Parses the json string to store customer details such as user id, name, latitude and longitude into a POJO object.
+	 * @param jsonString
+	 * @return
+	 */
 	public static CustomerPojo parseCustomerJson(String jsonString) {
 		CustomerPojo customerDetails = null;
 		try {

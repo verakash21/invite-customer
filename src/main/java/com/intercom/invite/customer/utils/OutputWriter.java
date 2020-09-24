@@ -12,6 +12,12 @@ public final class OutputWriter {
 	private OutputWriter(){}
 	private static Logger logger = Logger.getLogger(OutputWriter.class.getName());
 	
+	/**
+	 * Stores the data in Map into an output file. 
+	 * @param contentMap
+	 * @param filePath
+	 * @throws IOException
+	 */
 	public static void storeMapToFile(SortedMap<Integer, String> contentMap, String filePath) throws IOException {
         Writer writer = null;
         if (contentMap != null && !contentMap.isEmpty() && filePath != null && !filePath.isEmpty()) {
