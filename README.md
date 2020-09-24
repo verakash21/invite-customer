@@ -1,6 +1,7 @@
 # invite-customer
 Java Maven Project
-==================================ABOUT PROJECT==================================================================================
+
+# ABOUT PROJECT
 Creates an invitation list of customer within 100KM of given location from a txt file containing all the required information in json format.
 
 The project is written in Java language and built using Apache Maven.
@@ -16,7 +17,7 @@ Input file: List of customer records sperated by newline. Each line is a json st
 
 Ouput File: List of customer within 100KM range of this location(53.339428, -6.257664) sorted by user_id (ascending).
 
-===================================To RUN THIS PROJECT===========================================================================
+# To RUN THIS PROJECT
 #Go to project home directory:
 cd invite-customer/
 
