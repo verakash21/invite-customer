@@ -15,7 +15,7 @@ Arguments to be passed.
 
 Input file: List of customer records sperated by newline. Each line is a json string of customer recods like this: {"latitude": "52.986375", "user_id": 12, "name": "Christina McArdle", "longitude": "-6.043701"}
 
-Ouput File: List of customer within 100KM range of this location(53.339428, -6.257664) sorted by user_id (ascending).
+Ouput File: List of customer within 100KM range of this location(53.339428, -6.257664) sorted by user_id (ascending). 
 
 # To RUN THIS PROJECT
 #Go to project home directory:
@@ -28,5 +28,15 @@ mvn clean install
 mvn clean install -DskipTests
 
 #Once build succeeds run following command to execute code (change the input file path):
-java -cp target\invite-customer-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.intercom.invite.customer.core.CustomerList -i customers.txt -o output.txt
+java -cp target\invite-customer-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.intercom.invite.customer.core.CustomerList -i customers.txt -o filteredList.txt
 
+# Demo
+customers.txt contains potential list of customer and the program gives the filtered list of customer in output.txt file.
+
+\invite-customer>java -cp target\invite-customer-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.intercom.invite.customer.core.CustomerList -i customers.txt -o output.txt
+Sep 24, 2020 1:37:21 PM com.intercom.invite.customer.core.CustomerList processCustomerList
+INFO: Processing File customers.txt
+Sep 24, 2020 1:37:21 PM com.intercom.invite.customer.utils.OutputWriter storeMapToFile
+INFO: Storing output in file output.txt
+Sep 24, 2020 1:37:21 PM com.intercom.invite.customer.core.CustomerList main
+INFO: Execution Finished.
