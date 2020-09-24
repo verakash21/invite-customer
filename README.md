@@ -36,7 +36,9 @@ customers.txt contains potential list of customer and the program gives the filt
 \invite-customer>java -cp target\invite-customer-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.intercom.invite.customer.core.CustomerList -i customers.txt -o output.txt
 Sep 24, 2020 1:37:21 PM com.intercom.invite.customer.core.CustomerList processCustomerList
 INFO: Processing File customers.txt
+
 Sep 24, 2020 1:37:21 PM com.intercom.invite.customer.utils.OutputWriter storeMapToFile
 INFO: Storing output in file output.txt
+
 Sep 24, 2020 1:37:21 PM com.intercom.invite.customer.core.CustomerList main
 INFO: Execution Finished.
